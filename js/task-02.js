@@ -28,10 +28,19 @@ const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Con
 
 const navEl = document.querySelector('#ingredients');
 
-const addLi = ingredients.forEach(function (ingredient) {
+// ---------   Прошу підказати чи можна цю задачу вирішити за допомогою forEach?  (код нижче закоментований)
+// const addLi = ingredients.forEach(ingredient => {
+// const navLiEL = document.createElement('li');
+//   navLiEL.classList.add('item');
+//   navLiEL.textContent = ingredient;
+//   navEl.appendChild(navLiEL);
+//   // console.log(navLiEL);
+// });
+
+const addLi = ingredients.map(ingredient => {
   const navLiEL = document.createElement('li');
   navLiEL.classList.add('item');
   navLiEL.textContent = ingredient;
   navEl.appendChild(navLiEL);
-  // console.log(navLiEL);
+  console.log(navLiEL);
 });
