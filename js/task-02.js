@@ -41,6 +41,8 @@ const addLi = ingredients.map(ingredient => {
   const navLiEL = document.createElement('li');
   navLiEL.classList.add('item');
   navLiEL.textContent = ingredient;
-  navEl.appendChild(navLiEL);
   console.log(navLiEL);
+  return navLiEL;
 });
+
+navEl.append(...addLi);

@@ -22,6 +22,7 @@ input.addEventListener('blur', event => {
     input.classList.remove('invalid');
     return input.classList.add('valid');
   }
-  return input.classList.add('invalid');
-  console.log('Фокус втрачено');
+  input.classList.remove('valid');
+  input.classList.add('invalid');
+  // console.log('Фокус втрачено');
 });
